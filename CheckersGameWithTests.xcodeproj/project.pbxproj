@@ -21,6 +21,10 @@
 		07086D8718B538D9002540C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07086D6918B538D9002540C7 /* UIKit.framework */; };
 		07086D8F18B538D9002540C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07086D8D18B538D9002540C7 /* InfoPlist.strings */; };
 		07086D9118B538D9002540C7 /* CheckersGameWithTestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07086D9018B538D9002540C7 /* CheckersGameWithTestsTests.m */; };
+		07086D9C18B53902002540C7 /* BoardPiece.m in Sources */ = {isa = PBXBuildFile; fileRef = 07086D9B18B53902002540C7 /* BoardPiece.m */; };
+		07086D9F18B53927002540C7 /* CheckerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07086D9E18B53927002540C7 /* CheckerCell.m */; };
+		07086DA218B53944002540C7 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 07086DA118B53944002540C7 /* Player.m */; };
+		07086DA518B5398E002540C7 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = 07086DA418B5398E002540C7 /* Board.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,15 @@
 		07086D8C18B538D9002540C7 /* CheckersGameWithTestsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CheckersGameWithTestsTests-Info.plist"; sourceTree = "<group>"; };
 		07086D8E18B538D9002540C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		07086D9018B538D9002540C7 /* CheckersGameWithTestsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckersGameWithTestsTests.m; sourceTree = "<group>"; };
+		07086D9A18B53902002540C7 /* BoardPiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoardPiece.h; path = ../BoardPiece.h; sourceTree = "<group>"; };
+		07086D9B18B53902002540C7 /* BoardPiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoardPiece.m; path = ../BoardPiece.m; sourceTree = "<group>"; };
+		07086D9D18B53927002540C7 /* CheckerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckerCell.h; sourceTree = "<group>"; };
+		07086D9E18B53927002540C7 /* CheckerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckerCell.m; sourceTree = "<group>"; };
+		07086DA018B53944002540C7 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		07086DA118B53944002540C7 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		07086DA318B5398E002540C7 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		07086DA418B5398E002540C7 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
+		07086DA618B541A4002540C7 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +132,14 @@
 				07086D7B18B538D9002540C7 /* ViewController.m */,
 				07086D7D18B538D9002540C7 /* Images.xcassets */,
 				07086D6C18B538D9002540C7 /* Supporting Files */,
+				07086D9D18B53927002540C7 /* CheckerCell.h */,
+				07086D9E18B53927002540C7 /* CheckerCell.m */,
+				07086DA318B5398E002540C7 /* Board.h */,
+				07086DA418B5398E002540C7 /* Board.m */,
+				07086D9A18B53902002540C7 /* BoardPiece.h */,
+				07086D9B18B53902002540C7 /* BoardPiece.m */,
+				07086DA018B53944002540C7 /* Player.h */,
+				07086DA118B53944002540C7 /* Player.m */,
 			);
 			path = CheckersGameWithTests;
 			sourceTree = "<group>";
@@ -130,6 +151,7 @@
 				07086D6E18B538D9002540C7 /* InfoPlist.strings */,
 				07086D7118B538D9002540C7 /* main.m */,
 				07086D7318B538D9002540C7 /* CheckersGameWithTests-Prefix.pch */,
+				07086DA618B541A4002540C7 /* Constants.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -249,9 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07086DA518B5398E002540C7 /* Board.m in Sources */,
 				07086D7C18B538D9002540C7 /* ViewController.m in Sources */,
+				07086D9C18B53902002540C7 /* BoardPiece.m in Sources */,
 				07086D7618B538D9002540C7 /* AppDelegate.m in Sources */,
 				07086D7218B538D9002540C7 /* main.m in Sources */,
+				07086DA218B53944002540C7 /* Player.m in Sources */,
+				07086D9F18B53927002540C7 /* CheckerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
